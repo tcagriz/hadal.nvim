@@ -4,6 +4,11 @@ Deep blue dark colorscheme for Neovim, based on the VS Code Abyss color theme.
 It covers the UI, Treesitter, LSP, diagnostics, diff, terminal colors and popular
 plugin groups.
 
+## Discover
+
+[View Hadal on Dotfyle](https://dotfyle.com/plugins/tcagriz/hadal.nvim) for
+installation examples and Neovim plugin metadata.
+
 ## Requirements
 
 - Neovim
