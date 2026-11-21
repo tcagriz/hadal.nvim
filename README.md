@@ -1,13 +1,15 @@
 # hadal.nvim
 
 Deep blue dark colorscheme for Neovim, based on the VS Code Abyss color theme.
-It covers the UI, Treesitter, LSP, diagnostics, diff, terminal colors and plugin groups
-(rainbow-delimiters, indent-blankline, nvim-tree, telescope, render-markdown,
-todo-comments, snacks and bufferline).
+It covers the UI, Treesitter, LSP, diagnostics, diff, terminal colors and popular
+plugin groups.
 
-## Install
+## Requirements
 
-lazy.nvim:
+- Neovim
+- A true-color terminal is recommended
+
+## Install with lazy.nvim
 
 ```lua
 {
@@ -20,27 +22,46 @@ lazy.nvim:
 }
 ```
 
-Without a plugin manager, put the repo on your `runtimepath` and run
-`:colorscheme hadal`.
+Restart Neovim or run `:Lazy sync`, then the colorscheme will load automatically.
+
+## Other installation methods
+
+Place this repository on Neovim's `runtimepath`, then run:
+
+```vim
+:colorscheme hadal
+```
+
+From the Hadal monorepo, you can alternatively run `./install.sh neovim`.
 
 ## bufferline.nvim
 
-With lazy.nvim, the Hadal highlights are merged into your own `akinsho/bufferline.nvim`
-spec automatically (`lazy.lua` is marked `optional = true`, so it never installs the
-plugin). Without lazy.nvim:
+With lazy.nvim, Hadal highlights are merged into an existing
+`akinsho/bufferline.nvim` spec automatically. The integration is optional and
+does not install bufferline.nvim.
+
+Without lazy.nvim:
 
 ```lua
-require("bufferline").setup({ highlights = require("hadal.bufferline") })
+require("bufferline").setup({
+  highlights = require("hadal.bufferline"),
+})
 ```
 
-## Development
+## Supported integrations
 
-This plugin is developed inside the
-[Hadal Theme Suite](https://github.com/tcagriz/hadal-theme) monorepo and mirrored here with
-`git subtree split`. `lua/hadal/palette.lua` is generated from the suite's
-`palette/palette.json`; do not edit it by hand. Send changes to the monorepo.
+The colorscheme includes groups for rainbow-delimiters, indent-blankline,
+nvim-tree, telescope, render-markdown, todo-comments, snacks and bufferline.
+
+## Support and source
+
+Report Neovim-specific issues in the
+[issue tracker](https://github.com/tcagriz/hadal.nvim/issues). Source changes are
+made in the [Hadal Theme Suite](https://github.com/tcagriz/hadal-theme) monorepo and
+mirrored here.
 
 ## License
 
 MIT. The base colors come from the Abyss theme in
-[microsoft/vscode](https://github.com/microsoft/vscode), see the LICENSE file.
+[microsoft/vscode](https://github.com/microsoft/vscode); see the
+[license notice](LICENSE).
