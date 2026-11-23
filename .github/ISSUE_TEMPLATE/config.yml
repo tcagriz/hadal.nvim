@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and support
+    url: https://github.com/tcagriz/hadal-theme/discussions
+    about: Ask usage and installation questions in the source repository.
+  - name: Report a bug or request a change
+    url: https://github.com/tcagriz/hadal-theme/issues/new/choose
+    about: Source issues and implementation are tracked in the Hadal monorepo.
+  - name: Report a security vulnerability
+    url: https://github.com/tcagriz/hadal-theme/security/advisories/new
+    about: Report suspected vulnerabilities or credential exposure privately.
+  - name: Hadal Roadmap
+    url: https://github.com/users/tcagriz/projects/3
+    about: Review planned work before proposing a new task.

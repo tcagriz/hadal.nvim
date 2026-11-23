@@ -60,10 +60,14 @@ nvim-tree, telescope, render-markdown, todo-comments, snacks and bufferline.
 
 ## Support and source
 
-Report Neovim-specific issues in the
-[issue tracker](https://github.com/tcagriz/hadal.nvim/issues). Source changes are
-made in the [Hadal Theme Suite](https://github.com/tcagriz/hadal-theme) monorepo and
-mirrored here.
+Ask installation and usage questions in
+[Hadal Discussions](https://github.com/tcagriz/hadal-theme/discussions). Report
+reproducible Neovim-specific bugs through the
+[Hadal issue chooser](https://github.com/tcagriz/hadal-theme/issues/new/choose).
+Source changes are made in the
+[Hadal Theme Suite](https://github.com/tcagriz/hadal-theme) monorepo and mirrored
+here. Suspected vulnerabilities must use the monorepo's
+[private security report form](https://github.com/tcagriz/hadal-theme/security/advisories/new).
 
 ## License
 
